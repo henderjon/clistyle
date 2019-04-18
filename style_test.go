@@ -7,7 +7,7 @@ import (
 )
 
 func TestString(t *testing.T) {
-	e := Style("test this string", 0)
+	e := Style("test this string", None)
 
 	expected := "test this string"
 	if diff := cmp.Diff(e, expected); diff != "" {

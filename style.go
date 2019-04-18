@@ -27,6 +27,7 @@ const (
 	magentaBG = ";45"
 	cyanBG    = ";46"
 	whiteBG   = ";47"
+	None      = 0
 	Bold      = 1 << iota
 	Underline
 	Reverse
@@ -76,7 +77,7 @@ var backgrounds = map[int]string{
 }
 
 // Style decorates value according to the options passed via flag. It only allows three settings
-// [text;foreground;backgroundm. Bits are or'ed together to control the style. 
+// [TEXT;FOREGROUND;BACKGROUNDm. Bits are or'ed together to control the style.
 func Style(value string, flag int) string {
 	var (
 		s strings.Builder
