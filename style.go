@@ -76,7 +76,7 @@ var backgrounds = map[int]string{
 }
 
 // Style decorates value according to the options passed via flag. It only allows three settings
-// [text;foreground;backgroundm
+// [text;foreground;backgroundm. Bits are or'ed together to control the style. 
 func Style(value string, flag int) string {
 	var (
 		s strings.Builder
