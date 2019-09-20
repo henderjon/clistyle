@@ -55,6 +55,7 @@ var texts = map[int]string{
 	Underline: underline,
 	Bold:      bold,
 }
+
 var foregrounds = map[int]string{
 	Black:   black,
 	Red:     red,
@@ -65,6 +66,7 @@ var foregrounds = map[int]string{
 	Cyan:    cyan,
 	White:   white,
 }
+
 var backgrounds = map[int]string{
 	BlackBG:   blackBG,
 	RedBG:     redBG,
